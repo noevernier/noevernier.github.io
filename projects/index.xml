@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on My Portfolio</title>
+    <title>💻 Projects on My Portfolio</title>
     <link>/projects/</link>
-    <description>Recent content in Projects on My Portfolio</description>
+    <description>Recent content in 💻 Projects on My Portfolio</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Math Braintrainer</title>
-      <link>/projects/math-brain-trainer/</link>
+      <title>MusiCoach</title>
+      <link>/projects/music-coach/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/math-brain-trainer/</guid>
-      <description></description>
+      <guid>/projects/music-coach/</guid>
+      <description>MusiCoach is a smart musical composition assistant destined towards beginners. It contains a dashboard with an MIDI editor/reader but can also listen to someone play at the piano and retranscribe the notes in the app. The assistant helps the user compose by suggesting some phrases, melodies, sequences of notes coherent to the patterns created by the user according to the style and progression of the musical piece.
+The user, using his computer, composes the beginning to a melodie in a MIDI editor, the smart assistant then suggests a multitude of choices to complete his music.</description>
     </item>
     
   </channel>
