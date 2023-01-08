@@ -11,7 +11,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/articles/gan/</guid>
-      <description></description>
+      <description>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.
+Examples {{ if or .Params.math .Site.Params.math }} {{ partial &amp;#34;math.html&amp;#34; . }} {{ end }} def test(n): return 0 Block math: $$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$ Inline math: \(\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887\ldots\)</description>
     </item>
     
   </channel>
