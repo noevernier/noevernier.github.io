@@ -4,7 +4,28 @@
     <title>My Portfolio</title>
     <link>/</link>
     <description>Recent content on My Portfolio</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 16 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Super Duper Maze Solver</title>
+      <link>/projects/maze-inf103/</link>
+      <pubDate>Mon, 16 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/maze-inf103/</guid>
+      <description>Ce projet est un programme écrit en Java qui permet de visualiser, de modifier et de résoudre des labyrinthes hexagonaux stockés dans des fichiers de type .maze. Il utilise la bibliothèque Swing pour l&amp;rsquo;affichage graphique.
+Fonctionnalités Ouvrir un fichier .maze pour visualiser le labyrinthe Modifier le labyrinthe en ajoutant/supprimant des murs Résoudre le labyrinthe à l&amp;rsquo;aide de l&amp;rsquo;algorithme de Dijkstra Afficher la solution sous forme de chemin sur le labyrinthe Utilisation Téléchargez le projet sur GitHub foo@bar:~$ git clone https://github.</description>
+    </item>
+    
+    <item>
+      <title>MusiCoach</title>
+      <link>/projects/music-coach/</link>
+      <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/music-coach/</guid>
+      <description>MusiCoach is a smart musical composition assistant destined towards beginners. It contains a dashboard with an MIDI editor/reader but can also listen to someone play at the piano and retranscribe the notes in the app. The assistant helps the user compose by suggesting some phrases, melodies, sequences of notes coherent to the patterns created by the user according to the style and progression of the musical piece.
+The user, using his computer, composes the beginning to a melodie in a MIDI editor, the smart assistant then suggests a multitude of choices to complete his music.</description>
+    </item>
+    
     <item>
       <title>Diffusion Models</title>
       <link>/articles/gan/</link>
@@ -13,16 +34,6 @@
       <guid>/articles/gan/</guid>
       <description>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.
 Examples {{ if or .Params.math .Site.Params.math }} {{ partial &amp;#34;math.html&amp;#34; . }} {{ end }} def test(n): return 0 Block math: $$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$ Inline math: \(\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887\ldots\)</description>
-    </item>
-    
-    <item>
-      <title>MusiCoach</title>
-      <link>/projects/music-coach/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/music-coach/</guid>
-      <description>MusiCoach is a smart musical composition assistant destined towards beginners. It contains a dashboard with an MIDI editor/reader but can also listen to someone play at the piano and retranscribe the notes in the app. The assistant helps the user compose by suggesting some phrases, melodies, sequences of notes coherent to the patterns created by the user according to the style and progression of the musical piece.
-The user, using his computer, composes the beginning to a melodie in a MIDI editor, the smart assistant then suggests a multitude of choices to complete his music.</description>
     </item>
     
   </channel>

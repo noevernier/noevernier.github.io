@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>MusiCoach | My Portfolio</title>
+<title>Super Duper Maze Solver | My Portfolio</title>
 <meta name="keywords" content="" />
-<meta name="description" content="MusiCoach is a smart musical composition assistant destined towards beginners.">
+<meta name="description" content="A simple editor and solver hexagonal maze coded in Java.">
 <meta name="author" content="Noé Vernier">
-<link rel="canonical" href="/projects/music-coach/" />
+<link rel="canonical" href="/projects/maze-inf103/" />
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.ab7982ded1403bc5108aabacf2d68838e1559766e23c64709fff335ad8008be3.css" integrity="sha256-q3mC3tFAO8UQiqus8taIOOFVl2biPGRwn/8zWtgAi&#43;M=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.min.b95bacdc39e37a332a9f883b1e78be4abc1fdca2bc1f2641f55e3cd3dabd4d61.js" integrity="sha256-uVus3DnjejMqn4g7Hni&#43;Srwf3KK8HyZB9V4809q9TWE="
     onload="hljs.initHighlightingOnLoad();"></script>
@@ -130,19 +130,91 @@
   <header class="post-header">
     <div class="breadcrumbs"><a href="">Home</a>&nbsp;»&nbsp;<a href="/projects/">💻 Projects</a></div>
     <h1 class="post-title">
-      MusiCoach
+      Super Duper Maze Solver
     </h1>
     <div class="post-description">
-      MusiCoach is a smart musical composition assistant destined towards beginners.
+      A simple editor and solver hexagonal maze coded in Java.
     </div>
-    <div class="post-meta"><span title='2022-11-10 00:00:00 +0000 UTC'>November 10, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Noé Vernier</div>
-  </header> 
+    <div class="post-meta"><span title='2023-01-16 00:00:00 +0000 UTC'>January 16, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Noé Vernier</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#fonctionnalit%c3%a9s" aria-label="Fonctionnalités">Fonctionnalités</a></li>
+                <li>
+                    <a href="#utilisation" aria-label="Utilisation">Utilisation</a></li>
+                <li>
+                    <a href="#format-des-fichiers-maze" aria-label="Format des fichiers .maze">Format des fichiers .maze</a></li>
+                <li>
+                    <a href="#remarques" aria-label="Remarques">Remarques</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
 
   <div class="post-content">
-  <p>MusiCoach is a smart musical composition assistant destined towards beginners. It contains a dashboard with an MIDI editor/reader but can also listen to someone play at the piano and retranscribe the notes in the app. The assistant helps the user compose by suggesting some phrases, melodies, sequences of notes coherent to the patterns created by the user according to the style and progression of the musical piece.</p>
-<p>The user, using his computer, composes the beginning to a melodie in a MIDI editor, the smart assistant then suggests a multitude of choices to complete his music. Finally, the user chooses the number of notes that he wishes the assistant to predict with the help of a slider, and adds the suggestion he prefers to his musical piece.</p>
-<p><img loading="lazy" src="/images/diagramme-musicoach.png" alt="Example image"  />
-</p>
+  <p>Ce projet est un programme écrit en Java qui permet de visualiser, de modifier et de résoudre des labyrinthes hexagonaux stockés dans des fichiers de type .maze. Il utilise la bibliothèque Swing pour l&rsquo;affichage graphique.</p>
+<h2 id="fonctionnalités">Fonctionnalités</h2>
+<ul>
+<li>Ouvrir un fichier <em>.maze</em> pour visualiser le labyrinthe</li>
+<li>Modifier le labyrinthe en ajoutant/supprimant des murs</li>
+<li>Résoudre le labyrinthe à l&rsquo;aide de l&rsquo;algorithme de Dijkstra</li>
+<li>Afficher la solution sous forme de chemin sur le labyrinthe</li>
+</ul>
+<h2 id="utilisation">Utilisation</h2>
+<ol>
+<li>Téléchargez le projet sur GitHub</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">foo@bar:~$ git clone https://github.com/noevernier/maze-inf103.git
+</span></span></span></code></pre></div><ol start="2">
+<li>Ouvrez le projet dans un environnement de développement (ex: vscode)</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">foo@bar:~$ cd maze-inf103
+</span></span></span><span class="line"><span class="cl"><span class="go">foo@bar:~$ code .
+</span></span></span></code></pre></div><ol start="3">
+<li>Exécutez la classe principale (Main)</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">foo@bar:~$ java main/Main.js
+</span></span></span></code></pre></div><ol start="4">
+<li>Utilisez les boutons de l&rsquo;interface pour ouvrir un fichier, effectuer des modifications et résoudre le labyrinthe</li>
+</ol>
+<h2 id="format-des-fichiers-maze">Format des fichiers .maze</h2>
+<p>Les fichiers .maze doivent respecter le format suivant :</p>
+<ul>
+<li>Chaque ligne représente une rangée d&rsquo;hexagones</li>
+<li>Les hexagones sont séparés par des espaces</li>
+<li>Un <code>E</code> représente un hexagone vide</li>
+<li>Un <code>W</code> représente un hexagone occupé</li>
+<li>Un <code>A</code> représente l&rsquo;hexagone d&rsquo;arrivé</li>
+<li>Un <code>D</code> représente l&rsquo;hexagone de depart</li>
+</ul>
+<p>Exemple :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">DEEEEEWWEEEE
+</span></span></span><span class="line"><span class="cl"><span class="go">EEEWWWEWWWWW
+</span></span></span><span class="line"><span class="cl"><span class="go">EEEEEEEWEEWW
+</span></span></span><span class="line"><span class="cl"><span class="go">EEEEEEEEEEWE
+</span></span></span><span class="line"><span class="cl"><span class="go">EWEEEEEEEEWE
+</span></span></span><span class="line"><span class="cl"><span class="go">WWEEEEEEEEWE
+</span></span></span><span class="line"><span class="cl"><span class="go">EWEEEEEEEEEE
+</span></span></span><span class="line"><span class="cl"><span class="go">EWWWEWEAEEEW
+</span></span></span><span class="line"><span class="cl"><span class="go">EEEEEEEEEEWE
+</span></span></span><span class="line"><span class="cl"><span class="go">EWEEEEEEEEWE
+</span></span></span><span class="line"><span class="cl"><span class="go">WWEEEEEEEEWE
+</span></span></span><span class="line"><span class="cl"><span class="go">EWEEEEEEEEEE
+</span></span></span></code></pre></div><h2 id="remarques">Remarques</h2>
+<ul>
+<li>
+<p>Le projet utilise des images d&rsquo;hexagones pour l&rsquo;affichage graphique, vous pouvez remplacer ces images par vos propres images si vous le souhaitez.</p>
+</li>
+<li>
+<p>L&rsquo;algorithme de Dijkstra utilisé pour résoudre le labyrinthe n&rsquo;est pas optimisé pour des labyrinthes de grandes tailles, il peut prendre un certain temps pour résoudre un labyrinthe très grand.</p>
+</li>
+</ul>
 
   </div>
 
@@ -150,7 +222,7 @@
 
 <div class="share-buttons">
 
-    <a target="_blank" rel="noopener noreferrer" aria-label="share MusiCoach on linkedin"
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Super Duper Maze Solver on linkedin"
         href="https://www.linkedin.com/in/heycharlola/">
         <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
             <path
